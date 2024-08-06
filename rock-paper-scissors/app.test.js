@@ -14,8 +14,11 @@ test('bare bones test', () => {
 });
 
 // write test cases/scenarios for calculateRoundResult
-test('bare bones test', () => {
-    expect(true).toBe(true);
+test('calculation round result ROCK and ROCK = DRAW', () => {
+    expect(()=> calculateRoundResult("rock", ROCK)).toBe(DRAW);
   });
   
+test('calculation round result PAPER and PAPER = DRAW', () => {
+  expect(() => calculateRoundResult("paper", PAPER)).toBe({outcome: "draw", message: "Player chose rock and computer chose paper. Player wins."})
+});
 

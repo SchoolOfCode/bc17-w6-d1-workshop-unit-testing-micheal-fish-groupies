@@ -1,9 +1,9 @@
 export const ROCK = "rock";
 export const PAPER = "paper";
 const SCISSORS = "scissors";
-export const DRAW = "draw",
-  WIN = "win",
-  LOSS = "loss";
+export const DRAW = "draw";
+export const WIN = "win";
+export const LOSS = "loss";
 
 /**
  * The 'calculateRoundResult' function takes in the playerMove and computerMove as its arguments. Both playerMove and computerMove will respectively be either: 'rock', 'paper', or 'scissors'.
@@ -33,10 +33,10 @@ export function calculateRoundResult(playerMove, computerMove) {
   if (ROCK === playerMove && ROCK === computerMove) {
     return { outcome: DRAW, message: "Both players chose rock. It's a draw." };
   }
-  if (playerMove === "rock" && computerMove === "") {
+  if (playerMove === "paper" && computerMove === PAPER) {
     return {
       outcome: DRAW,
-      message: "Player chose rock and computer chose paper. Computer wins.",
+      message: "Player chose paper and computer chose paper. It's a draw.",
     };
   }
   if (playerMove === "ROCK" && computerMove === SCISSORS) {
