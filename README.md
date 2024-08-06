@@ -103,7 +103,7 @@ News of your testing prowess has spread across the company. You and your team ar
 
 Your team has been tasked with:
 
-- Rename `app.txt` to `app.js`
+- Rename `app.txt` to `app.js` //DONE
 - Tidy up and format the code (a tool like Prettier may help with automatically formatting the code for you)
 - Spend time reading through `app.js` and getting familiar with how the code is meant to work
 - Create a file named `app.test.js` with a bare bones test and import the exported functions from `app.js`.

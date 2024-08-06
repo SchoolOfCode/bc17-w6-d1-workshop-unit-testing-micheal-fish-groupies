@@ -41,3 +41,8 @@ test('squared number of 6, 10 should be 36', () => {
 test('using % operator', () => {
         expect(() => calculate('%', 4, 5)).toThrowError()
     })
+
+    //pizza throws error
+test('using pizza as operator', () => {
+    expect(() => calculate('🍕', 2, 5)).toThrowError()
+})
